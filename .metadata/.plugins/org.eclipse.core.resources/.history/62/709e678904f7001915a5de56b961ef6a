@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:c_rt="http://java.sun.com/jstl/core_rt"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:body>
+	<h1>Post Tweet</h1>
+	<h:form>
+	<p:link outcome="findAllTweets" value="Find all Tweets">
+				<f:param name="tweetsId" />
+			</p:link>
+			<p:spacer/>
+			<p:spacer/>
+		<h:panelGrid columns="2" cellpadding="5">
+			<p:inputTextarea rows="5" cols="30" autoResize="true"
+				value="#{twitterController.tweetBody}" />
+			<h:outputText id="display" />
+			<p:commandButton value="Post" action="#{twitterController.saveTweet}"></p:commandButton>
+			
+		</h:panelGrid>
+	</h:form>
+</h:body>
+</html>

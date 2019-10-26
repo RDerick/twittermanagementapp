@@ -1,0 +1,53 @@
+package com.twitter.controller;
+
+import java.util.List;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ManagedProperty;
+import javax.faces.bean.SessionScoped;
+import javax.ws.rs.client.Client;
+import javax.ws.rs.client.ClientBuilder;
+import javax.ws.rs.client.Entity;
+import javax.ws.rs.client.WebTarget;
+
+import com.twitter.consts.TwitterActions;
+import com.twitter.model.TwitterDTO;
+
+@ManagedBean(name = "twitterController")
+@SessionScoped
+public class TwitterController {
+
+	Client client = ClientBuilder.newClient();
+	
+	
+			
+	private String tweetBody;
+	
+	public List<TwitterDTO> getAllTweets() {
+		TwitterDTO s =  client.target(TwitterActions.URL+TwitterActions.GET_ALL_TWEETS).request().get(TwitterDTO.class);
+		System.out.println("getAllTweets " + s);
+		return null;
+	}
+	
+	public String saveTweet() {
+		System.out.println("getAllTweets BODY " + this.tweetBody);
+		String response = client.target(TwitterActions.URL+TwitterActions.CREATE_NEW_TWEET).request().post(Entity.json(twitterBody()),String.class);
+		if(response != null) {
+			System.out.println("getAllTweets BODY Saved " + this.tweetBody + " response " + response);
+		}
+		return null;
+	}
+	
+	private TwitterDTO twitterBody() {
+		TwitterDTO dto = new TwitterDTO();
+		dto.setTweetBody(tweetBody);
+		return dto;
+	}
+	public String getTweetBody() {
+		return tweetBody;
+	}
+
+	public void setTweetBody(String tweetBody) {
+		this.tweetBody = tweetBody;
+	}
+}

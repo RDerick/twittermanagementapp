@@ -1,0 +1,14 @@
+package com.twitter.Interfaces;
+
+import java.util.List;
+
+import com.twitter.dto.TwitterDTO;
+import com.twitter.entities.TwitterDetail;
+
+public interface ITwitter {
+	
+	List<TwitterDTO> getAllTweetsByID(Long id);
+	TwitterDetail saveTweet(TwitterDTO twitterDto);
+	void postTweet(String message);
+	
+}

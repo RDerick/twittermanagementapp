@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+org.jboss.tools.ws.jaxrs.ui.validator.problem.resourceMethodUnboundPathAnnotationTemplateParameter=warning
+org.jboss.tools.ws.jaxrs.ui.validator.problem.resourceMethodUnboundPathParameterAnnotationValue=ignore

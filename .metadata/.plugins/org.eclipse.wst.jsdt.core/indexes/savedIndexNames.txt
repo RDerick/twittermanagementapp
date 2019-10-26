@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Users\DERICKRACHIDI\Documents\School\DSO\TWITTERProject\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3410553231.index
+3656417125.index
+2566348455.index
+3310541204.index
+3645717051.index
+118292181.index

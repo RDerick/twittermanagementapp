@@ -1,0 +1,6 @@
+package com.twitter.Interfaces;
+
+public interface ITwitter {
+	
+List<TwitterDetail> getAllTweets(Integer id);
+}

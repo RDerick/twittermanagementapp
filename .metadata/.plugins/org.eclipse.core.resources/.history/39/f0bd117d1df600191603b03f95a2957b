@@ -1,0 +1,17 @@
+package com.twitter.Interfaces;
+
+import java.io.IOException;
+import java.util.List;
+
+import com.twitter.dto.TwitterDTO;
+import com.twitter.entities.TwitterDetail;
+
+import twitter4j.TwitterException;
+
+public interface ITwitter {
+	
+	List<TwitterDTO> getAllTweetsByID(Integer id);
+	TwitterDetail saveTweet(TwitterDTO twitterDto);
+	void postTweet(String message) throws TwitterException, IOException;
+	
+}

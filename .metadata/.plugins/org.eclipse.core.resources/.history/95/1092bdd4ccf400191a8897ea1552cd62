@@ -1,0 +1,5 @@
+package com.twitter.Interfaces;
+
+public interface ITwitter {
+
+}

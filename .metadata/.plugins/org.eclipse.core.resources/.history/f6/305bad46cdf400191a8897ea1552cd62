@@ -1,0 +1,8 @@
+package com.twitter.rest;
+
+import javax.ws.rs.Path;
+
+@Path("twitter")
+public class TwitterRest {
+
+}

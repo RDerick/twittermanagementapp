@@ -1,0 +1,36 @@
+package com.twitter.dto;
+
+import java.io.Serializable;
+import java.util.Date;
+
+public class TwitterDTO implements Serializable{
+
+	private int tweetID;
+	private Date timeStamp;
+	private String tweeTbody;
+
+	public int getTweetID() {
+		return tweetID;
+	}
+
+	public void setTweetID(int tweetID) {
+		this.tweetID = tweetID;
+	}
+
+	public Date getTimeStamp() {
+		return timeStamp;
+	}
+
+	public void setTimeStamp(Date timeStamp) {
+		this.timeStamp = timeStamp;
+	}
+
+	public String getTweeTbody() {
+		return tweeTbody;
+	}
+
+	public void setTweeTbody(String tweeTbody) {
+		this.tweeTbody = tweeTbody;
+	}
+
+}

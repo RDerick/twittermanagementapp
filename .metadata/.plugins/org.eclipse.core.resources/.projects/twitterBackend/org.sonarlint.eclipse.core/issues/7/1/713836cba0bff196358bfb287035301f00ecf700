@@ -1,0 +1,13 @@
+
+’squid:S00115%"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(É¬Ž®8³Áþµà-H³RCRITICALZ
+CODE_SMELL
+—squid:S00115!"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(•ÉÉ÷ÿÿÿÿÿ8³Áþµà-H±RCRITICALZ
+CODE_SMELL
+l
+squid:S106T"9Replace this use of System.out or System.err by a logger.(ã‰”Ð8Äµ¥·à-HùRMAJORZ
+CODE_SMELL
+_squid:S1148="#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8Á‘Õ´à-H‹RMINORZVULNERABILITY
+’squid:S00115#"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ËÈæí8³Áþµà-H²RCRITICALZ
+CODE_SMELL
+—squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(±Ò´”üÿÿÿÿ8³Áþµà-H°RCRITICALZ
+CODE_SMELL

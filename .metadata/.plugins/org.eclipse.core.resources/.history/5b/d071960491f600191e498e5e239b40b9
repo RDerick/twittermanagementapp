@@ -1,0 +1,8 @@
+package com.twitter.consts;
+
+public class TwitterActions {
+	
+	private static final String URL = "http://localhost:8080/twitterApp/rest/twitter/";
+	private static final String URL = "createNewTweet";
+	private static final String URL = "findAllTweet";
+}

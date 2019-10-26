@@ -1,0 +1,21 @@
+package com.twitter.rest;
+
+import java.util.List;
+
+import javax.websocket.server.PathParam;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+
+import com.twitter.entities.TwitterDetail;
+
+@Path("twitter")
+public class TwitterRest {
+	
+	@Path("findAllTweet/{id}")
+	@Produces(MediaType.APPLICATION_JSON)
+	public List<TwitterDetail> findAllTweet(@PathParam("id")  Integer id) {
+		
+		return null;
+	}
+}

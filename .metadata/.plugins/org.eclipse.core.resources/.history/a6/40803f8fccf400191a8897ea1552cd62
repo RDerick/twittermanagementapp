@@ -1,0 +1,57 @@
+package com.twitter.entities;
+
+import java.io.Serializable;
+import javax.persistence.*;
+import java.util.Date;
+
+
+/**
+ * The persistent class for the twitter_details database table.
+ * 
+ */
+@Entity
+@Table(name="twitter_details")
+@NamedQuery(name="TwitterDetail.findAll", query="SELECT t FROM TwitterDetail t")
+public class TwitterDetail implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	Column(name="tweet_ID")
+	private int tweetID;
+
+	@Temporal(TemporalType.TIMESTAMP)
+	@Column(name="time_stamp")
+	private Date timeStamp;
+
+	@Column(name="twee_tbody")
+	private String tweeTbody;
+
+	public TwitterDetail() {
+	}
+
+	public int getTweet_ID() {
+		return this.tweet_ID;
+	}
+
+	public void setTweet_ID(int tweet_ID) {
+		this.tweet_ID = tweet_ID;
+	}
+
+	public Date getTimeStamp() {
+		return this.timeStamp;
+	}
+
+	public void setTimeStamp(Date timeStamp) {
+		this.timeStamp = timeStamp;
+	}
+
+	public String getTweeTbody() {
+		return this.tweeTbody;
+	}
+
+	public void setTweeTbody(String tweeTbody) {
+		this.tweeTbody = tweeTbody;
+	}
+
+}
