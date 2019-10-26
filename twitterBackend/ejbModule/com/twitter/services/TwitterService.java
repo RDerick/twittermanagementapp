@@ -43,7 +43,7 @@ public class TwitterService implements ITwitter {
 
 	@Override
 	public TwitterDetail saveTweet(TwitterDTO twitterDTO) {
-		String recipiantName = "@Derickmorwakom1";
+		String recipiantName = "@AdhLecturer";
 		TwitterDetail twitterDetails = new TwitterDetail();
 		if (twitterDTO != null) {
 			twitterDetails.setTweetBody( twitterDTO.getTweetBody());
